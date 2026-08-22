@@ -1,6 +1,6 @@
-# 📊 Cybersecurity: Splunk Enterprise SIEM Deployment & Configuration
+# Cybersecurity: Splunk Enterprise SIEM Deployment & Configuration
 
-## 📖 Table of Contents
+## Table of Contents
 - [Introduction to Splunk](#-introduction-to-splunk-enterprise-siem)
 - [Project Overview](#-project-overview)
 - [Objective](#-objective)
@@ -15,16 +15,16 @@
 
 ---
 
-## 🛑 Introduction to Splunk Enterprise (SIEM)
+## Introduction to Splunk Enterprise (SIEM)
 **Splunk Enterprise** is an industry-leading platform utilized by Security Operations Centers (SOCs) for searching, analyzing, and visualizing machine-generated data in real-time. In the cybersecurity domain, it functions as a powerful Security Information and Event Management (SIEM) tool. Splunk ingests massive volumes of logs from networks, servers, and applications, allowing security analysts to detect anomalies, investigate breaches, and monitor the overall health and security posture of an IT infrastructure.
 
-## 📌 Project Overview
+## Project Overview
 This project documents the end-to-end deployment of a local Splunk Enterprise instance. It details the workflow of provisioning an authorized Splunk account, acquiring the correct enterprise binaries, executing a secure local installation on a Windows environment, creating local administrative credentials, and successfully initializing the Splunk Web interface.
 
-## 🎯 Objective
+## Objective
 To establish a functional, locally-hosted SIEM environment capable of indexing log data. This baseline installation will serve as the foundation for future advanced cybersecurity labs, including log ingestion, custom dashboard creation, and threat hunting.
 
-## 🛠️ System Specifications
+## System Specifications
 *   **Operating System Environment:** Windows / Windows Server Architecture
 *   **Software Version:** Splunk Enterprise 10.4.2 (64-bit)
 *   **Installer Type:** Windows Installer Package (`.msi`)
@@ -32,7 +32,7 @@ To establish a functional, locally-hosted SIEM environment capable of indexing l
 
 ---
 
-## 🚀 Deployment Methodology Workflow
+## Deployment Methodology Workflow
 
 ### Phase 1: Account Provisioning
 **Objective:** To register for the Splunk developer/trial program to obtain the official enterprise binaries safely from the vendor.
@@ -45,7 +45,7 @@ To begin the deployment, I initiated a search for the official Splunk distributi
 Navigated to the official Splunk Free Trials & Downloads portal, which hosts the secure enterprise deployment packages.
 <br>
 
-![Splunk Portal](images/2-opened-splunk-download-page.jpg)
+![Splunk Portal](images/2-opened-splunk-download-page.png)
 
 Initiated the account provisioning process by accessing the Sign Up module to create an authorized developer/trial profile.
 <br>
@@ -55,17 +55,17 @@ Initiated the account provisioning process by accessing the Sign Up module to cr
 Began the registration process by providing a primary business email address to associate with the Splunk deployment.
 <br>
 
-![Email Registration](images/4-insert-your-email.jpg)
+![Email Registration](images/4-insert-your-email.png)
 
 Completed the organizational and personal identity verification forms required by Splunk's software distribution policies.
 <br>
 
-![Registration Form](images/5-fill-the-form-1.jpg)
+![Registration Form](images/5-fill-the-form-1.png)
 
 Reviewed and accepted the mandatory licensing, privacy, and terms of service agreements required to finalize account creation.
 <br>
 
-![Accept Agreements](images/6-fill-the-form-2.jpg)
+![Accept Agreements](images/6-fill-the-form-2.png)
 
 Successfully authenticated the account creation request by verifying the One-Time Password (OTP) delivered securely to the registered email inbox.
 <br>
@@ -80,7 +80,7 @@ Successfully authenticated the account creation request by verifying the One-Tim
 With the account fully provisioned and verified, I accessed the Splunk Enterprise product catalog to deploy the SIEM on local hardware.
 <br>
 
-![Select Splunk Enterprise](images/8-click-on-splunk-enterprise.jpg)
+![Select Splunk Enterprise](images/8-click-on-splunk-enterprise.png)
 
 Selected the 64-bit Windows Installer Package (`.msi`) for Splunk Enterprise version 10.4.2, which is optimized for Windows 10 and Windows Server architectures.
 <br>
@@ -95,7 +95,7 @@ Reviewed and authorized the final Splunk General Terms agreement to bind the sof
 The portal confirmed the authorization and began the secure transfer of the 1.04 GB enterprise binary to the local environment.
 <br>
 
-![Download Started](images/11-downlaod-page.jpg)
+![Download Started](images/11-downlaod-page.png)
 
 Verified the integrity and successful transfer of the `splunk-10.4.2-33c3bf42cd73-windows-x64.msi` installer package in the local directory.
 <br>
@@ -150,7 +150,7 @@ Splunk Enterprise installation completed successfully without errors. Instructed
 The browser successfully routed to `localhost:8000`, confirming the Splunk Web service was actively listening. Authenticated using the local administrative credentials created during Phase 3.
 <br>
 
-![Splunk Login](images/20-splunk-login-page.jpg)
+![Splunk Login](images/20-splunk-login-page.png)
 
 Acknowledged the initial data collection and telemetry prompt presented upon the first successful administrative login.
 <br>
@@ -164,7 +164,7 @@ Successfully accessed the primary Splunk Administrator Dashboard. Verified that 
 
 ---
 
-## 🛡️ Security Relevance & Impact
+## Security Relevance & Impact
 Setting up a SIEM like Splunk is a foundational skill for Blue Team operations and SOC analysts. A properly configured Splunk environment allows security teams to:
 *   **Centralize Log Management:** Aggregate Windows Event Logs, Sysmon data, and firewall traffic into a single pane of glass.
 *   **Threat Hunting:** Query massive datasets to identify Indicators of Compromise (IoCs), lateral movement, or unauthorized access attempts.
@@ -172,5 +172,5 @@ Setting up a SIEM like Splunk is a foundational skill for Blue Team operations a
 
 ---
 
-## ⚖️ Ethical Guidelines & Disclaimer
+## Ethical Guidelines & Disclaimer
 This installation and configuration process was performed within a private, authorized laboratory environment strictly for educational and defensive cybersecurity training purposes.
